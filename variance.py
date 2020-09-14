@@ -8,7 +8,11 @@ def mean(values):
 
 
 def variance(values):
-    return sqrt(mean([(v - mean(values)) ** 2 for v in values]))
+    return mean([(v - mean(values)) ** 2 for v in values])
+
+
+def standard_deviaton(values0
+    return sqrt(variance(values))
 
 
 if __name__ == "__main__":
